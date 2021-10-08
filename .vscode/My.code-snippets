@@ -20,17 +20,33 @@
 	 //	"scope": "javascript,typescript",
 	 	"prefix": "aa",
 	 	"body": [
-	 		"margin: $1px 0px 0px $2px;"
+	 		"margin: $1px $2px $3px $4px;"
 	 	],
 	 	"description": "Margin"
 	 }
+	 "Margin-up-down": {
+		//	"scope": "javascript,typescript",
+			"prefix": "aaw",
+			"body": [
+				"margin: $1px $2px;"
+			],
+			"description": "Margin-up-down"
+		}
 	 "Padding": {
 		//	"scope": "javascript,typescript",
 			"prefix": "ss",
 			"body": [
-				"padding: $1px 0px 0px $2px;"
+				"padding: $1px $2px $3px $4px;"
 			],
 			"description": "Padding"
 		}
+		"Padding-up-down": {
+			//	"scope": "javascript,typescript",
+				"prefix": "ssw",
+				"body": [
+					"padding: $1px $2px;"
+				],
+				"description": "Padding-up-down"
+			}
 }
 
