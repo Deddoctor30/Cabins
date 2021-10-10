@@ -87,6 +87,7 @@ body {
 }
 .face {
    display: flex;
+   justify-content: space-between;
    &__description {
    }
 
@@ -117,8 +118,14 @@ body {
 .social {
 
    &__list {
+      display: flex;
+      flex-direction: column;
+      margin-top: -100px;
    }
 
    &__item {
+      transform: rotate(90deg);
+      flex: 1 1 auto;
+      margin: 40px 0px;
    }
 }
