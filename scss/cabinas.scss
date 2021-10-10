@@ -1,13 +1,124 @@
 @import url(/scss/Null.css);
 
+// font-family: 'Rubik', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 
-// font-family: 'Rubik', sans-serif;
 
 
-* {
+
+.text {
    font-family: 'Roboto', sans-serif;
-   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 12px;
+   line-height: 14px;
+   color: #FFFFFF;
 }
 
+body {
+   background-color: rgb(58, 55, 55);
+}
+
+//__________________________________________________________Header__________________________________________________________
+
+
+.header {
+
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      margin: 37px 0px 0px 0px;
+   }
+
+   &__logo {
+   }
+}
+.container {
+   max-width: 1000px;
+   margin: 0 auto;
+   // padding: 0px 20px;
+}
+.logo {
+
+   &__inner {
+   }
+
+   &__img {
+      padding: 6px 0px 0px 0px;
+   }
+}
+
+
+
+.menu {
+
+   &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // flex: 0 1 auto;
+   }
+
+   &__item {
+      margin: 0px 10px;
+      padding: 15px 30px;
+      transition: all 0.5s ease 0s;
+      &:hover {
+         background-color: rgb(93, 107, 189);
+         border-radius: 4px;
+      }
+   }
+
+   &__link {
+   }
+}
+
+
+//__________________________________________________________Main__________________________________________________________
+
+
+
+.body {
+
+   &__face {
+      margin: 186px 0px 0px 0px;
+   }
+}
+.face {
+   display: flex;
+   &__description {
+   }
+
+   &__subtitle {
+      margin: 0px 0px 12px 0px;
+      font-size: 16px;
+      line-height: 19px;
+   }
+
+   &__title {
+   }
+
+   &__video {
+   }
+
+   &__video-icon {
+   }
+
+   &__video-img {
+   }
+
+   &__video-name {
+   }
+
+   &__social {
+   }
+}
+.social {
+
+   &__list {
+   }
+
+   &__item {
+   }
+}
