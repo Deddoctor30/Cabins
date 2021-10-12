@@ -124,15 +124,11 @@ body {
    left: 85%;
    &__list {
       display: flex;
-      // flex-direction: column;
-      flex: 1 1 177px;
       margin: 50px 50px;
-      // justify-content: space-between;
       transform: rotate(90deg);
    }
 
    &__item {
-      // transform: rotate(90deg);
    }
    &__link {
       padding: 10px 20px;
