@@ -74,22 +74,35 @@ body {
   line-height: 19px;
 }
 
+.face__video {
+  padding: 0px 100px;
+}
+
+.social {
+  position: absolute;
+  top: 192px;
+  left: 85%;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: -100px;
-}
-
-.social__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 177px;
+          flex: 1 1 177px;
+  margin: 50px 50px;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 40px 0px;
+}
+
+.social__link {
+  padding: 10px 20px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.social__link:hover {
+  background-color: #5d6bbd;
+  border-radius: 4px;
 }

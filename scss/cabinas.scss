@@ -101,6 +101,11 @@ body {
    }
 
    &__video {
+      padding: 0px 100px;
+   }
+   
+   &__yt__video {
+
    }
 
    &__video-icon {
@@ -112,20 +117,29 @@ body {
    &__video-name {
    }
 
-   &__social {
-   }
 }
 .social {
-
+   position: absolute;
+   top: 192px;
+   left: 85%;
    &__list {
       display: flex;
-      flex-direction: column;
-      margin-top: -100px;
+      // flex-direction: column;
+      flex: 1 1 177px;
+      margin: 50px 50px;
+      // justify-content: space-between;
+      transform: rotate(90deg);
    }
 
    &__item {
-      transform: rotate(90deg);
-      flex: 1 1 auto;
-      margin: 40px 0px;
+      // transform: rotate(90deg);
+   }
+   &__link {
+      padding: 10px 20px;
+      transition: all 0.5s ease 0s;
+      &:hover {
+         background-color: rgb(93, 107, 189);
+         border-radius: 4px;
+         }
    }
 }
