@@ -3,12 +3,13 @@
 // font-family: 'Rubik', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
-
+// font-family: 'Merriweather', serif;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
 
 
 
 .text {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Rubik', sans-serif;
    font-style: normal;
    font-weight: 500;
    font-size: 12px;
@@ -17,7 +18,7 @@
 }
 
 body {
-   background-color: rgb(58, 55, 55);
+
 }
 
 //________________________________________________Header__________________________________________________________
@@ -89,6 +90,7 @@ body {
    display: flex;
    justify-content: space-between;
    &__description {
+      max-width: 440px;
    }
 
    &__subtitle {
@@ -98,16 +100,20 @@ body {
    }
 
    &__title {
+      font-size: 30px;
+      font-family: 'Merriweather', serif;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 38px;
    }
 
    &__video {
       padding: 0px 100px;
+      align-self: center;
+      display: flex;
    }
    
-   &__yt__video {
-
-   }
-
    &__video-icon {
    }
 
@@ -115,11 +121,25 @@ body {
    }
 
    &__video-name {
+      align-self: center;
+      margin: 0px 0px 0px 10px;
+   }
+}
+
+
+.video {
+   &__wrap {
    }
 
+   &__bg {
+   }
 }
+
+
+
+
 .social {
-   position: absolute;
+   position: fixed;
    top: 192px;
    left: 85%;
    &__list {
@@ -137,5 +157,17 @@ body {
          background-color: rgb(93, 107, 189);
          border-radius: 4px;
          }
+   }
+}
+
+
+.background-photo {
+   background-color: rgba(0, 0, 0, 0.863);
+   &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+      width: 100%;
    }
 }
