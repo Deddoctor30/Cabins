@@ -177,6 +177,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 400px;
           flex: 0 1 400px;
+  padding: 0px 20px;
 }
 
 .wood__title {
@@ -211,8 +212,8 @@
 
 .wood__fon {
   background-color: #fff;
-  height: 460px;
-  width: 1050px;
+  height: 160%;
+  width: 55%;
   position: absolute;
   z-index: -1;
   top: -60px;

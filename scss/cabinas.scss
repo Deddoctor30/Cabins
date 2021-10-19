@@ -52,7 +52,6 @@ body {
 .container {
    max-width: 1000px;
    margin: 0 auto;
-   // padding: 0px 20px;
 }
 .logo {
 
@@ -144,6 +143,7 @@ body {
 }
 
 
+//________________________________________________Social__________________________________________________________
 
 
 .social {
@@ -207,6 +207,7 @@ body {
    }
    &__item {
       flex: 0 1 400px;
+      padding: 0px 20px;
    }
    &__title {
       color: #222F33;
@@ -239,8 +240,8 @@ body {
 
    &__fon {
       background-color: #fff;
-      height: 460px;
-      width: 1050px;
+      height: 160%;
+      width: 55%;
       position: absolute;
       z-index: -1;
       top: -60px;
