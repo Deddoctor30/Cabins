@@ -98,8 +98,17 @@
 .face__description {
   max-width: 440px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+@media (max-width: 767px) {
+  .face__description {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin: 0px 0px 50px 0px;
+  }
 }
 
 .face__subtitle {
@@ -121,6 +130,12 @@
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   padding: 0px 30px;
+}
+
+@media (max-width: 767px) {
+  .face__video {
+    display: none;
+  }
 }
 
 .face__video-name {
@@ -216,11 +231,23 @@
   margin: 22px 0px -40px 0px;
 }
 
+@media (max-width: 717px) {
+  .wood__top {
+    display: block;
+  }
+}
+
 .wood__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 400px;
           flex: 0 1 400px;
   padding: 0px 0px 0px 40px;
+}
+
+@media (max-width: 768px) {
+  .wood__item {
+    padding: 0px 30px 0px 10px;
+  }
 }
 
 .wood__title {
@@ -270,16 +297,38 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .wood__fon {
+    display: none;
+  }
+}
+
+.wood__picture {
+  max-width: 450px;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: -40%;
+  left: 57%;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
   .wood__picture {
-    max-width: 450px;
-    max-height: 450px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+  .wood__picture img {
     -o-object-fit: cover;
        object-fit: cover;
-    position: absolute;
-    top: -40%;
-    left: 57%;
-    z-index: 1;
   }
 }
 
@@ -316,6 +365,13 @@
   z-index: -2;
 }
 
+@media (max-width: 761px) {
+  .innovation__fon {
+    top: 15%;
+    height: 80%;
+  }
+}
+
 .innovation__content {
   padding: 190px 20px 80px 20px;
   z-index: -1;
@@ -348,6 +404,16 @@
   line-height: 24px;
 }
 
+@media (max-width: 767px) {
+  .innovation__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin: 20px 0px;
+    padding: 0px 10px;
+  }
+}
+
 .house__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,6 +424,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 863px) {
+  .house__content {
+    padding: 0px 0px;
+  }
 }
 
 .house__picture {
@@ -376,9 +448,9 @@
 @media (max-width: 863px) {
   .house__picture {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 70%;
-            flex: 0 1 70%;
-    margin: 0px 0px 30px 0px;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin: 0px 0px 15px 0px;
   }
 }
 
@@ -413,11 +485,29 @@
   }
 }
 
+@media (max-width: 767px) {
+  .house__rows {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
 .house__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50%;
           flex: 0 1 50%;
   padding: 0px 0px 10px 30px;
+}
+
+@media (max-width: 767px) {
+  .house__item {
+    margin: 20px 0px;
+    padding: 0px 0px 0px 10px;
+  }
+  .house__item:first-child {
+    margin: 0px 0px;
+  }
 }
 
 .item__title {
@@ -439,6 +529,12 @@
   width: 100%;
 }
 
+@media (max-width: 657px) {
+  .footer {
+    padding: 20px 20px;
+  }
+}
+
 .footer__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,11 +546,24 @@
   height: 100%;
 }
 
+@media (max-width: 657px) {
+  .footer__content {
+    display: block;
+  }
+}
+
 .footer__mail {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
   font-size: 12px;
+}
+
+@media (max-width: 657px) {
+  .footer__mail {
+    text-align: center;
+    margin: 15px 0px;
+  }
 }
 
 .footer__mail a {
@@ -482,12 +591,26 @@
       flex-wrap: wrap;
 }
 
+@media (max-width: 657px) {
+  .footer__items {
+    display: block;
+    text-align: center;
+  }
+}
+
 .footer__item {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   font-size: 12px;
   padding: 0px 0px 0px 30px;
+}
+
+@media (max-width: 657px) {
+  .footer__item {
+    margin: 15px 0px;
+    padding: 0px;
+  }
 }
 
 .footer__item a {
