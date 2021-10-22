@@ -46,7 +46,13 @@
 }
 
 .logo__inner {
-  padding: 0px 10px;
+  padding: 0px 20px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -84,7 +90,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0px 10px;
+  padding: 0px 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -128,6 +134,20 @@
   z-index: 3;
 }
 
+@media (max-width: 768px) {
+  .social {
+    display: none;
+  }
+}
+
+@media (max-width: 1300px) {
+  .social {
+    position: absolute;
+    top: 19.5%;
+    left: 97%;
+  }
+}
+
 .social__list {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -145,8 +165,13 @@
   padding: 20px 10px;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
-  background-color: rgba(157, 150, 223, 0.589);
   border-radius: 5px;
+}
+
+@media (min-width: 1300px) {
+  .social__link {
+    background-color: #6d6d6d;
+  }
 }
 
 .social__link:hover {
@@ -195,7 +220,7 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 400px;
           flex: 0 1 400px;
-  padding: 0px 20px;
+  padding: 0px 0px 0px 40px;
 }
 
 .wood__title {
@@ -231,32 +256,34 @@
 .wood__fon {
   background-color: #fff;
   height: 150%;
-  width: 55%;
+  width: 60%;
   position: absolute;
   z-index: -1;
   top: -60px;
   left: 0;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .wood__fon {
     height: 130%;
+    top: -35px;
   }
 }
 
-.wood__picture {
-  max-width: 450px;
-  max-height: 450px;
-  overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: -40%;
-  left: 52%;
-  z-index: 1;
+@media (min-width: 768px) {
+  .wood__picture {
+    max-width: 450px;
+    max-height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: -40%;
+    left: 57%;
+    z-index: 1;
+  }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .wood__picture {
     top: -25%;
   }
@@ -264,11 +291,13 @@
 
 .wood__img {
   width: 120%;
+  height: 120%;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 960px) {
   .wood__img {
     width: 100%;
+    height: 100%;
   }
 }
 
@@ -326,6 +355,9 @@
   padding: 85px 0px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .house__picture {
@@ -341,12 +373,21 @@
   min-width: 250px;
 }
 
+@media (max-width: 863px) {
+  .house__picture {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 70%;
+            flex: 0 1 70%;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
 .house__picture img {
   width: 100%;
   height: 100%;
   position: absolute;
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
   left: 0;
 }
@@ -362,6 +403,14 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 70%;
           flex: 0 1 70%;
+}
+
+@media (max-width: 773px) {
+  .house__rows {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
 }
 
 .house__item {
