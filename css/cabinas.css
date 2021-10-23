@@ -297,8 +297,8 @@
 
 .wood__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 400px;
-          flex: 0 1 400px;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   padding: 0px 0px 0px 40px;
 }
 
@@ -340,7 +340,7 @@
 
 .wood__fon {
   background-color: #fff;
-  height: 150%;
+  height: 127%;
   width: 60%;
   position: absolute;
   z-index: -1;
@@ -350,7 +350,7 @@
 
 @media (max-width: 960px) {
   .wood__fon {
-    height: 130%;
+    height: 120%;
     top: -35px;
   }
 }
@@ -370,6 +370,12 @@
   top: -40%;
   left: 57%;
   z-index: 1;
+}
+
+@media (max-width: 1440px) {
+  .wood__picture {
+    top: -20%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -431,9 +437,9 @@
   z-index: -2;
 }
 
-@media (max-width: 761px) {
+@media (max-width: 768px) {
   .innovation__fon {
-    top: 15%;
+    top: 17%;
     height: 80%;
   }
 }
@@ -444,6 +450,12 @@
 }
 
 @media (max-width: 860px) {
+  .innovation__content {
+    padding: 120px 20px 80px 20px;
+  }
+}
+
+@media (max-width: 768px) {
   .innovation__content {
     padding: 120px 20px 80px 20px;
   }
