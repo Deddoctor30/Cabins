@@ -12,8 +12,6 @@
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
 
-/*_____________________color elements_________________*/
-
 a {
 	color: white;
 }
@@ -41,15 +39,9 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*--------------------*/
 
-// font-family: 'Rubik', sans-serif;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-
-// font-family: 'Merriweather', serif;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
-
-
 
 .text {
    font-family: 'Rubik', sans-serif;
@@ -60,7 +52,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
    color: #FFFFFF;
 }
 
-
 .text-2 {
    font-family: Merriweather;
    font-style: normal;
@@ -69,27 +60,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
    line-height: 38px;
    color: #FFFFFF;
 }
-
-body {
-}
-
-//________________________________________________Header__________________________________________________________
-
-
 .wrapper {
    position: relative;
 
 }
-
 .header {
    &__inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 37px 0px 0px 0px;
-   }
-
-   &__logo {
    }
 }
 .container {
@@ -101,11 +81,7 @@ body {
    &__inner {
       padding: 0px 20px;
    }
-
-   &__img {
-   }
 }
-
 .menu {
    @media (max-width:768px) {
       display: none;
@@ -115,7 +91,6 @@ body {
       flex-wrap: wrap;
       justify-content: space-between;
    }
-
    &__item {
       margin: 0px 10px;
       padding: 15px 30px;
@@ -125,15 +100,7 @@ body {
          border-radius: 4px;
       }
    }
-
-   &__link {
-   }
 }
-
-
-//________________________________________________Body__________________________________________________________
-
-
 
 .body {
    min-height: 400px;
@@ -145,33 +112,27 @@ body {
    display: flex;
    padding: 0px 20px;
    flex-wrap: wrap;
-   
-
    &__description {
       max-width: 440px;
       flex: 0 1 50%;
       padding: 20px;
-
       @media (max-width:767px) {
          flex: 0 1 100%;
          margin: 0px 0px 50px 0px;
          max-width: 100%;
       }
    }
-
    &__subtitle {
       margin: 0px 0px 12px 0px;
       font-size: 16px;
       line-height: 19px;
    }
-
    &__title {
       margin: 0px 0px 20px 0px;
       @media (max-width:375px) {
          font-size: 24px;
       }
    }
-
    &__video {
       align-self: center;
       display: flex;
@@ -182,26 +143,10 @@ body {
          display: none;
       }
    }
-   
-   &__video-icon {
-   }
-
-   &__video-img {
-   }
-
    &__video-name {
       padding: 10px 0px 0px 0px;
    }
 }
-
-.video {
-   &__wrap {
-   }
-
-   &__bg {
-   }
-}
-
 .face {
    &__bg-fon {
       background-color: rgba(0, 0, 0, 0.507);
@@ -215,7 +160,6 @@ body {
          display: none;
       }
    }
-
    &__bg-video {
       position: absolute;
       top: 0;
@@ -230,11 +174,6 @@ body {
       }
    }
 }
-
-
-//________________________________________________Social__________________________________________________________
-
-
 .social {
    @media (max-width:768px) {
       display: none;
@@ -252,11 +191,9 @@ body {
       writing-mode: vertical-lr;
       display: flex;
    }
-
    &__item {
       padding: 10px 0px;
    }
-   
    &__link {
       padding: 20px 10px;
       transition: all 0.5s ease 0s;
@@ -267,10 +204,9 @@ body {
       &:hover {
          background-color: rgb(93, 107, 189);
          border-radius: 5px;
-         }
+      }
    }
 }
-
 .background-fon {
    background-color: rgba(0, 0, 0, 0.315);
    width: 100%;
@@ -283,8 +219,6 @@ body {
       display: none;
    }
 }
-
-
 .background-photo {
    width: 100%;
    height: 100%;
@@ -301,11 +235,6 @@ body {
       object-fit: cover;
    }
 }
-
-
-//________________________________________________Wood__________________________________________________________
-
-
 .wood {
    position: relative;
       &__top {
@@ -325,17 +254,14 @@ body {
    &__title {
       color: #222F33;
    }
-
    &__text {
       color: #646D70;
       margin: 13px 0px 30px 0px;
       line-height: 26px;
    }
-
    &__button {
       z-index: 2;
    }
-
    &__btn {
       color: #606B74;
       border: 2px solid #646D70;
@@ -349,7 +275,6 @@ body {
          border: 2px solid rgb(93, 107, 189);
       }
    }
-
    &__fon {
       background-color: #fff;
       height: 127%;
@@ -366,7 +291,6 @@ body {
          display: none;
       }
    }
-
    &__picture {
       max-width: 450px;
       max-height: 450px;
@@ -394,7 +318,6 @@ body {
          top: -25%;
       } 
    }
-
    &__img {
       width: 120%;
       height: 120%;
@@ -408,11 +331,6 @@ body {
       }
    }
 }
-
-
-//________________________________________________Innovation__________________________________________________________
-
-
 .innovation {
    position: relative;
    z-index: -2;
@@ -429,7 +347,6 @@ body {
          height: 80%;
       }
    }
-   
    &__content {
       padding: 190px 20px 80px 20px;
       z-index: -1;
@@ -440,17 +357,14 @@ body {
          padding: 120px 20px 80px 20px;
       }
    }
-
    &__title {
       margin: 0px 0px 16px 0px;
    }
-
    &__row {
       display: flex;
       flex-wrap: wrap;
       margin: 0px -20px;
    }
-
    &__column {
       flex: 0 0 50%;
       padding: 0px 20px;
@@ -462,11 +376,6 @@ body {
       }
    }
 }
-
-
-//________________________________________________House__________________________________________________________
-
-
 .house {
    &__content {
       display: flex;
@@ -477,7 +386,6 @@ body {
          padding: 0px 0px;
       }
    }
-
    &__picture {
       align-self: center;
       flex: 0 0 30%;
@@ -498,7 +406,6 @@ body {
          left: 0;
       }
    }
-
    &__rows {
       display: flex;
       flex-wrap: wrap;
@@ -514,7 +421,6 @@ body {
          margin: 0px;
       }
    }
-
    &__item {
       flex: 0 1 50%;
       padding: 0px 0px 10px 30px;
@@ -527,7 +433,6 @@ body {
       }
    }
 }
-
 .item {
    &__title {
       color: #222F33;
@@ -541,11 +446,6 @@ body {
       padding: 0px 10px 0px 0px;
    }
 }
-
-
-//________________________________________________Footer__________________________________________________________
-
-
 .footer {
    background-color: #222F33;
    min-height: 100px;
@@ -563,7 +463,6 @@ body {
          display: block;
       }
    }
-
    &__mail {
       flex: 0 1 33.333%;
       font-size: 12px;
@@ -575,12 +474,10 @@ body {
          padding: 15px;
       }
    }
-
    &__logo {
       flex: 0 1 33.333%;
       text-align: center;
    }
-
    &__items {
       flex: 0 1 33.333%;   
       display: flex;
@@ -591,7 +488,6 @@ body {
          text-align: center;
       }
    }
-
    &__item {
       flex: 0 1 auto;   
       font-size: 12px;
